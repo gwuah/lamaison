@@ -1,0 +1,27 @@
+{
+  "name": "lamaison",
+  "version": "1.0.0",
+  "description": "A central place for humans to find affordable hostels/housing closest them",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwuah/lamaison.git"
+  },
+  "keywords": [
+    "housing",
+    "node",
+    "es6",
+    "express",
+    "mongoose",
+    "mvp"
+  ],
+  "author": "gwuah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwuah/lamaison/issues"
+  },
+  "homepage": "https://github.com/gwuah/lamaison#readme"
+}
