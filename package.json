@@ -4,7 +4,8 @@
   "description": "A central place for humans to find affordable hostels/housing closest them",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,20 @@
   ],
   "author": "gwuah",
   "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "joi": "^13.6.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.2.17",
+    "morgan": "^1.9.1",
+    "validator": "^10.8.0"
+  },
   "bugs": {
     "url": "https://github.com/gwuah/lamaison/issues"
   },
