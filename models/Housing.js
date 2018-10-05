@@ -4,10 +4,18 @@ const Schema = mongoose.Schema;
 
 const housingSchema = new Schema({
   location: {
-    type: String, 
-    required: true, 
-    trim: true, 
-    lowercase:true
+    type: {
+      type: String,
+      default: 'Point'
+    },
+    coordinates: [{
+      type: Number,
+      required: true
+    }],
+    address: {
+      type: String,
+      required: true
+    }
   },
   name: { 
     type: String, 
@@ -18,10 +26,7 @@ const housingSchema = new Schema({
   telephone: { 
     type: String, 
     required: true, 
-    unique: true },
-  geo: {
-    longitude: Number,
-    latitude: Number
+    unique: true 
   },
   images: [String],
   owner: {
@@ -30,6 +35,7 @@ const housingSchema = new Schema({
     required: true
   },
   averageCost: Number,
+  about: String
 }, {timestamps: true});
 
 const Housing = mongoose.model('Housing', housingSchema);

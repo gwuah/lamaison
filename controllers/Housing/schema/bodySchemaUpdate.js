@@ -3,15 +3,17 @@ Joi.objectId = require('joi-objectid')(Joi);
 
 const schema = Joi.object({
   name: Joi.string().lowercase(),
-  location: Joi.string(),
-  telephone: Joi.string().min(10),
-  geo: Joi.object().keys({
-    longitude: Joi.number(),
-    latitude: Joi.number()
+  location: Joi.object().keys({
+    type: Joi.string().default('Point'),
+    coordinates: Joi.array(),
+    address: Joi.string()
   }),
+  telephone: Joi.string().min(10),
   images: Joi.array().items([Joi.string()]),
   owner: Joi.objectId(),
-  averageCost: Joi.number()
+  averageCost: Joi.number(),
+  about: Joi.string()
+
 });
 
 module.exports = schema;
