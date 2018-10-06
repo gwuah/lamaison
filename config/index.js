@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   EMAIL_API: 'https://polymailer.herokuapp.com/api/v1',
-  PROD_DB_URL: 'mongodb://localhost:27017/lamaison',
+  PROD_DB_URL: 'mongodb://vevo:junkatown1@ds121311.mlab.com:21311/grifflocal',
   DEV_DB_URL: 'mongodb://localhost:27017/lamaison',
   PORT: process.env.PORT || 7001,
   BS_SECRET: process.env.LA_MAISON_SECRET,
