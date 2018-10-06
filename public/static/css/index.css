@@ -1,0 +1,64 @@
+/* font-family: 'Cantarell', sans-serif; */
+
+header {
+  text-align: center;
+}
+
+
+.name {
+  font-family: 'Cantarell';
+  font-weight: 600;
+  margin-top: 200px;
+  font-size: 90px;
+}
+
+.tagline {
+  margin-bottom: 30px;
+}
+
+.search__input {
+  padding: 19px;
+  width: 50%
+}
+
+.login__text {
+  font-family: 'Cantarell';
+  margin-top: 180px;
+  margin-bottom: 28px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#input__element__container {
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+#input__element__container input {
+  height: 50px;
+  display: block;
+  border-radius: 3px;
+  padding-left: 15px 80px !important ;
+  color: #828282;
+  outline-color: #0067f5;
+  background: #fff;
+  border: 1px solid hsla(0,0%,82%,.56);
+  margin-top: .9375em;
+  font-family: 'Cantarell';
+  font-size: 14px;
+  margin: 20px;
+}
+
+hr {
+  width: 50%;
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: 'Cantarell';
+}
+
+/* .row {
+  border: 1px solid red;
+} */
