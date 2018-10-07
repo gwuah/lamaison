@@ -43,7 +43,17 @@ const genSalt = function() {
   return crypto.randomBytes(16).toString('hex');
 }
 
+const generateRandomFiveDigits = function() {
+  return (Math.floor(Math.random()*90000) + 10000)
+}
+
+function capitalise(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
 module.exports = {
+  capitalise,
+  generateRandomFiveDigits,
   hashPassword,
   genSalt,
   verify,
