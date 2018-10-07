@@ -322,4 +322,18 @@ Zeus.prototype.deleteById = async function(params) {
 
 }
 
+Zeus.prototype.verifyPhoneNumber = async function(query, body) {
+  const {id: userId} = query;
+  const {telephoneVerificationToken: token} = body;
+
+  const {auth} = await this.db.getById(userId);
+
+  if (auth.telephoneVerificationToken == token) {
+    const {verified} = await this.db.setProp(userId, 'verified', true);
+    return {data:{verified}, message: `${this.name} verified successfully`, code: 200}
+  } else {
+    return {message: 'Token Validation Failed', code: 400}
+  }
+}
+
 module.exports = Zeus;
