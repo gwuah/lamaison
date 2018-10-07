@@ -1,4 +1,5 @@
-const housingRoutes = require('./Housing')
+const housingRoutes = require('./Housing');
+const ownerRoutes = require('./Owner')
 
 const express = require('express');
 const router = new express.Router();
@@ -8,5 +9,9 @@ router.use(
   housingRoutes
 );
 
+router.use(
+  '/owners', 
+  ownerRoutes
+);
 
 module.exports = router;
