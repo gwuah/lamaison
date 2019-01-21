@@ -23,11 +23,6 @@ const housingSchema = new Schema({
     trim: true,
     lowercase: true 
   },
-  telephone: { 
-    type: String, 
-    required: true, 
-    unique: true 
-  },
   images: [String],
   owner: {
     type: Schema.Types.ObjectId, 

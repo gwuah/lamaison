@@ -8,7 +8,6 @@ const schema = Joi.object({
     coordinates: Joi.array(),
     address: Joi.string()
   }),
-  telephone: Joi.string().min(10),
   images: Joi.array().items([Joi.string()]),
   owner: Joi.objectId(),
   averageCost: Joi.number(),
