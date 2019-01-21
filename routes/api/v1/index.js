@@ -10,13 +10,13 @@ const router = new express.Router();
 
 router.use(
   '/housing', 
-  wrapAsync(authorize({name: 'HOUSING'})),
+  // wrapAsync(authorize({name: 'HOUSING'})),
   housingRoutes
 );
 
 router.use(
   '/owners',
-  wrapAsync(authorize({name: 'OWNERS'})),
+  // wrapAsync(authorize({name: 'OWNERS'})),
   ownerRoutes
 );
 

@@ -14,6 +14,8 @@ const authenticationMiddleware = authenticate({
   whiteList
 });
 
-router.use('/v1', wrapAsync(authenticationMiddleware), v1Router);
+// wrapAsync(authenticationMiddleware),
+
+router.use('/v1', v1Router);
 
 module.exports = router;
