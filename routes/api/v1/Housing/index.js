@@ -31,6 +31,7 @@ router.post('/', c(controller.create,
 router.get('/', c(controller.getAll, 
   (req, res, next) => [req.query]
 ));
+// name
 
 
 // export router to global scope
